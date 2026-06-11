@@ -1,0 +1,110 @@
+/* Reset básico para remover margens e padronizar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte principal e cores do site */
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff0f5; /* Rosa pastel de fundo */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ffe4e1; /* Rosa suave */
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    color: #ff69b4; /* Rosa mais forte */
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff69b4;
+}
+
+/* Seções do site */
+.section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Seção Sobre Mim */
+.sobre-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfil {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #ffb6c1; /* contorno rosa suave */
+}
+
+.info p {
+    margin-bottom: 10px;
+}
+
+/* Seção de Dicas */
+.dica {
+    background-color: #fdf5f5; /* Rosa muito suave */
+    border-left: 5px solid #ffb6c1;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.dica h3 {
+    color: #ff69b4;
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffe4e1;
+    color: #555;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .sobre-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
